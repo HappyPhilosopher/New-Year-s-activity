@@ -138,7 +138,7 @@ header .activity-rules-slogan {
                 position: absolute;
                 top: 0;
                 right: -0.1rem;
-                width: 0.7rem;
+                width: 0.9rem;
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.99);
                 filter: blur(2px);
@@ -155,14 +155,13 @@ header .activity-rules-slogan {
   width: 2.99rem;
   height: 3.78rem;
   box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.5);
-  margin-left: 0.1rem;
-  margin-right: 0.1rem;
-  transition: all 0.2s;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  transition: all 0.1s;
   filter: blur(1px);
 }
 .main .content-img04 .swiper-container .swiper-slide-active {
-  width: 3.43rem;
-  height: 4.33rem;
+  transform: scale(1.1);
   filter: blur(0);
 }
 .main .content-img04 .swiper-container .swiper-slide1 {
