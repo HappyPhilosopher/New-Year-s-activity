@@ -53,13 +53,22 @@
     <script src="./js/swiper.min.js"></script>
     <script>
         let swiper = new Swiper('.swiper-container', {
+            watchSlidesProgress: true,
             loop: true,
             slidesPerView: 'auto',
             loopedSlides: 3,
             centeredSlides: true,
             on: {
-                progress(progress) {
-                    console.log(progress);
+                // progress(progress) {
+                //     this.slides.each((index, item) => {
+                        
+                //     });
+                // }
+                setTransition: function(transition) {
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i);
+                        slide.transition(transition);
+                    }
                 }
             }
         });
