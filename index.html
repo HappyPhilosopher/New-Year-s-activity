@@ -2,76 +2,269 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Swiper</title>
+    <title>散户解套大援助</title>
     <link rel="stylesheet" href="./css/swiper.min.css">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        .swiper-container {
-            width: 6rem;
-            height: 3rem;
-            margin: 1rem auto;
-            border: 1px solid #000;
-        }
-        .swiper-wrapper {
-            align-items: center;
-        }
-        .swiper-slide {
-            width: 2.5rem;
-            height: 2rem;
-            background-color: lightblue;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.3rem;
-            margin-right: 0.2rem;
-            margin-left: 0.2rem;
-            transition: all 0.2s;
-        }
-        .swiper-slide-active {
-            width: 3rem;
-            height: 2.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script>
-        document.documentElement.style.fontSize = innerWidth / 750 * 100 + 'px';
+        'use strict';
+        //初始化字体大小
+        document.documentElement.style.fontSize = 100 * innerWidth / 750 + "px",
+		addEventListener("load",
+		function() {
+		    setTimeout(function() {
+		        document.documentElement.style.fontSize = 100 * innerWidth / 750 + "px",
+		        window.unit = 100 * innerWidth / 750;
+		        var n = document.createEvent("Event");
+		    },
+		    480)
+		}),
+		addEventListener("orientationchange",
+		function() {
+		    setTimeout(function() {
+		        document.documentElement.style.fontSize = 100 * innerWidth / 750 + "px"
+		    },
+		    480)
+        });
+        addEventListener("resize",
+		function() {
+		    setTimeout(function() {
+		        document.documentElement.style.fontSize = 100 * innerWidth / 750 + "px"
+		    },
+		    480)
+		});
+    </script>
+    <script>
+        (function (para) {
+            var p = para.sdk_url,
+                n = para.name,
+                w = window,
+                d = document,
+                s = 'script',
+                x = null,
+                y = null;
+            if (typeof (w['sensorsDataAnalytic201505']) !== 'undefined') {
+                return false;
+            }
+            w['sensorsDataAnalytic201505'] = n;
+            w[n] = w[n] || function (a) {
+                return function () {
+                    (w[n]._q = w[n]._q || []).push([a, arguments]);
+                }
+            };
+            var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce', 'trackSignup', 'trackAbtest',
+                'setProfile', 'setOnceProfile', 'appendProfile', 'incrementProfile', 'deleteProfile',
+                'unsetProfile', 'identify', 'login', 'logout', 'trackLink', 'clearAllRegister', 'getAppStatus'
+            ];
+            for (var i = 0; i < ifs.length; i++) {
+                w[n][ifs[i]] = w[n].call(null, ifs[i]);
+            }
+            if (!w[n]._t) {
+                x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+                x.async = 1;
+                x.src = p;
+                x.setAttribute('charset', 'UTF-8');
+                y.parentNode.insertBefore(x, y);
+                w[n].para = para;
+            }
+        })({
+            sdk_url: 'https://win.chaochaojin.com/wap/sa-sdk-javascript/sensorsdata.min.js',
+            heatmap_url: 'https://win.chaochaojin.com/wap/sa-sdk-javascript/heatmap.min.js',
+            name: 'sensors',
+            server_url: 'https://jc-sensors.baidao.com/debug?project=yry_huizhicaijing',
+            heatmap: {}
+        });
+        sensors.quick('autoTrack');
     </script>
 </head>
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">1</div>
-            <div class="swiper-slide">2</div>
-            <div class="swiper-slide">3</div>
+    <!-- 头部 -->
+    <header>
+        <div class="top-banner">
+            <div class="activity-rules-slogan">活动规则</div>
+        </div>
+    </header>
+
+    <!-- 主体 -->
+    <section class="main">
+        <div class="content-img01"></div>
+        <div class="animate-arrow animate-move"></div>
+        <div class="introducer-container">
+            <div>为了你，我们准备了超实用解套大礼包</div>
+            <h2>3大战法+4份资料+5只解套金股</h2>
+            <p>（价值2980元解套大礼包）</p>
+        </div>
+        <div class="content-img02"></div>
+        <div class="content-img03"></div>
+        <div class="content-img04">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide1"></div>
+                    <div class="swiper-slide swiper-slide2"></div>
+                    <div class="swiper-slide swiper-slide3"></div>
+                    <div class="swiper-slide swiper-slide4"></div>
+                    <div class="swiper-slide swiper-slide5"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 浮窗 -->
+    <div class="fixed-container">
+        <div class="fixed-top">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <span>A股游击队</span>
+                        <span>1分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>昵称被改</span>
+                        <span>2分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>股友Y牛</span>
+                        <span>2分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>牛魔王i</span>
+                        <span>3分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>股神半夜情</span>
+                        <span>5分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>萌萌哒董哥</span>
+                        <span>7分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>腹黑股达人</span>
+                        <span>9分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>奔跑的猕猴桃</span>
+                        <span>15分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>股派三输</span>
+                        <span>21分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>股城小哥</span>
+                        <span>27分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>冷静理性客观</span>
+                        <span>29分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>股道518</span>
+                        <span>30分钟前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>兜兜木有嘎</span>
+                        <span>1小时前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>股市亏惨户</span>
+                        <span>1小时前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>闲情若步</span>
+                        <span>2小时前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                    <div class="swiper-slide">
+                        <span>HL股获仔</span>
+                        <span>2小时前</span>
+                        <span>领取了<em>解套大礼包</em></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-bottom">
+            <div class="slogan">超实用解套大礼包<span>￥2980</span></div>
+            <button class="btn">免费领取</button>
         </div>
     </div>
 
+    <!-- 遮罩层 -->
+    <div class="mask hide"></div>
+
+    <!-- 活动规则 -->
+    <div class="activity-rules hide">
+        <h2 class="col-yellow">活动规则</h2>
+        <div class="activity-rules-content">
+            <div class="rules-Android hide">
+                <ul>
+                    <li>本次活动仅限汇智财经用户参与；</li>
+                    <li>因礼包内福利太大，本次福利将在微信企业号中完成发放事宜；</li>
+                    <li>为保证您顺利领取全部福利，请您在授权手机登录后，根据引导提示，关注微信企业号：异势—投资1+1，届时<span class="col-yellow">将有VIP金牌小助为您发放解套礼包；</span></li>
+                    <li>您领取的<span class="col-yellow">解套礼包资料</span>，仅供学习参考，不作实际投资建议，据此操作风险自担。</li>
+                    <li>汇智财经将保留在法律范围内，对活动解释的权利</li>
+                </ul>
+            </div>
+            <div class="rules-IOS hide">
+                <ul>
+                    <li>本次活动仅限汇智财经用户参与；</li>
+                    <li>因礼包太大，本次福利将由<span class="col-yellow">金牌客服</span>为您发放；</li>
+                    <li>为保证您顺利领取全部福利，请您在进入小程序后，根据引导提示，<span class="col-yellow">添加客服微信号</span>：届时将有<span class="col-yellow">金牌客服</span>为您发放解套礼包</li>
+                    <li>您领取的<span class="col-yellow">解套礼包资料</span>，仅供学习参考，不作实际投资建议，据此操作风险自担。</li>
+                    <li>汇智财经将保留在法律范围内，对活动解释的权利</li>
+                </ul>
+            </div>
+        </div>
+        <div class="close">×</div>
+    </div>
+
+    <!-- 过渡动画 -->
+    <div class="transition-animate-container hide">
+        <div class="transition-animate"></div>
+        <p>您当前已排到第 <em>20</em> 位，请耐心等待！ </p>
+        <div class="loading">正在排队.</div>
+    </div>
+
+    <!-- 活动弹窗 -->
+    <div class="popup-activity hide">
+        <div class="title">
+            <p>恭喜你成功领取</p>
+            <h2>解套大礼包</h2>
+        </div>
+        <div class="tip">
+            <div class="tip-Android hide">
+                礼包太大了！已为您存放至<br>
+                <span class="col-yellow">微信企业号，请注意查收</span>
+            </div>
+            <div class="tip-IOS hide">
+                礼包福利将由金牌客服<br>
+                <span class="col-yellow">为您发放，请及时领取</span>
+            </div>
+        </div>
+        <a href="javascript:YTXBridge.fireEvent('ytx:navigate', {'type':141,'track':'首页_banner_客服','param':{'verifyType': 0}})" class="jump-btn">前往领取</a>
+        <div class="close">×</div>
+    </div>
+
+
+    <!-- 引入js文件 -->
     <script src="./js/swiper.min.js"></script>
-    <script>
-        let swiper = new Swiper('.swiper-container', {
-            watchSlidesProgress: true,
-            loop: true,
-            slidesPerView: 'auto',
-            loopedSlides: 3,
-            centeredSlides: true,
-            on: {
-                // progress(progress) {
-                //     this.slides.each((index, item) => {
-                        
-                //     });
-                // }
-                setTransition: function(transition) {
-                    for (var i = 0; i < this.slides.length; i++) {
-                        var slide = this.slides.eq(i);
-                        slide.transition(transition);
-                    }
-                }
-            }
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

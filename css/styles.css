@@ -1,0 +1,494 @@
+header {
+  position: relative;
+  width: 100%;
+}
+header .top-banner {
+  width: 7.49rem;
+  height: 6.78rem;
+  background: url(../images/top-banner.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+header .activity-rules-slogan {
+  position: absolute;
+  top: 0.4rem;
+  right: 0;
+  width: 0.34rem;
+  height: 1.18rem;
+  border: 1px solid #d5432b;
+  border-radius: 0.1rem 0 0 0.1rem;
+  background-color: #ee7320;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.22rem;
+  text-align: center;
+  line-height: 0.22rem;
+  color: #fff;
+}
+.main {
+  width: 100%;
+}
+.main .content-img01 {
+  width: 6.91rem;
+  height: 3.92rem;
+  background: url(../images/content-img01.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0.3rem auto 0;
+}
+.main .animate-arrow {
+  width: 0.81rem;
+  height: 1.63rem;
+  background-image: url(../images/animate-arrow.png);
+  background-position: left 0.2rem;
+  background-repeat: no-repeat;
+  background-size: 0.81rem 0.52rem;
+  margin: 0 auto;
+}
+.main .introducer-container {
+  width: 100%;
+}
+.main .introducer-container div {
+  position: relative;
+  font-family: "方正兰亭中黑";
+  font-size: 0.32rem;
+  color: #fff;
+  text-align: center;
+}
+.main .introducer-container div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.47rem;
+  transform: translateY(-50%);
+  width: 0.43rem;
+  height: 0.31rem;
+  background: url(../images/bg-title-left.png) no-repeat;
+  background-size: 100% 100%;
+}
+.main .introducer-container div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.41rem;
+  transform: translateY(-50%);
+  width: 0.43rem;
+  height: 0.31rem;
+  background: url(../images/bg-title-right.png) no-repeat;
+  background-size: 100% 100%;
+}
+.main .introducer-container h2 {
+  font-family: "方正兰亭大黑";
+  font-size: 0.46rem;
+  color: #ffec26;
+  text-align: center;
+  line-height: 0.46rem;
+  margin-top: 0.24rem;
+}
+.main .introducer-container p {
+  font-size: 0.28rem;
+  line-height: 0.28rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.21rem;
+}
+.main .content-img02 {
+  width: 6.89rem;
+  height: 5.04rem;
+  background: url(../images/content-img02.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0.44rem auto 0;
+}
+.main .content-img03 {
+  width: 6.9rem;
+  height: 4.74rem;
+  background: url(../images/content-img03.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0.37rem auto 0;
+}
+.main .content-img04 {
+  width: 6.83rem;
+  height: 7.04rem;
+  background: url(../images/content-img04.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0.49rem auto 2.46rem;
+  padding-top: 1.61rem;
+  box-sizing: border-box;
+}
+.main .content-img04 .swiper-container {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  margin: 0 auto;
+  /* &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -0.1rem;
+                width: 0.9rem;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.99);
+                filter: blur(2px);
+                z-index: 100;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -0.1rem;
+                width: 0.7rem;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.99);
+                filter: blur(2px);
+                z-index: 100;
+            } */
+  /* .swiper-slide-prev,
+            .swiper-slide-next{
+            } */
+}
+.main .content-img04 .swiper-container .swiper-wrapper {
+  align-items: center;
+}
+.main .content-img04 .swiper-container .swiper-slide {
+  width: 2.99rem;
+  height: 3.78rem;
+  box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.5);
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  transition: all 0.2s;
+  filter: blur(1px);
+}
+.main .content-img04 .swiper-container .swiper-slide-active {
+  transform: scale(1.2);
+  filter: blur(0);
+}
+.main .content-img04 .swiper-container .swiper-slide1 {
+  background: url(../images/swiper-slide01.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.main .content-img04 .swiper-container .swiper-slide2 {
+  background: url(../images/swiper-slide02.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.main .content-img04 .swiper-container .swiper-slide3 {
+  background: url(../images/swiper-slide03.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.main .content-img04 .swiper-container .swiper-slide4 {
+  background: url(../images/swiper-slide04.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.main .content-img04 .swiper-container .swiper-slide5 {
+  background: url(../images/swiper-slide05.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.main .content-img04 .swiper-container .swiper-pagination {
+  bottom: -0.1rem;
+}
+.main .content-img04 .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 0.12rem;
+  height: 0.12rem;
+  background-color: #be260e;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.main .content-img04 .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  width: 0.45rem;
+  border-radius: 0.06rem;
+}
+.fixed-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.7rem;
+  background: url(../images/bg-fixed.png) 4.5rem -0.5rem no-repeat;
+  background-size: 2.65rem 1.7rem;
+  background-color: #fcd937;
+  z-index: 200;
+}
+.fixed-container::before {
+  content: "领取播报";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  width: 1.62rem;
+  height: 0.5rem;
+  background-color: #fcd937;
+  border-radius: 0 0.15rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "方正兰亭中黑";
+  color: #6a332d;
+  font-weight: 900;
+}
+.fixed-container .fixed-top {
+  width: 100%;
+  height: 0.6rem;
+  padding-left: 0.23rem;
+  padding-right: 0.13rem;
+  padding-top: 0.07rem;
+  box-sizing: border-box;
+}
+.fixed-container .fixed-top .swiper-container {
+  position: relative;
+  width: 7.14rem;
+  height: 0.51rem;
+  border-bottom: 2px solid #6a332d;
+  padding-left: 0.33rem;
+  box-sizing: border-box;
+}
+.fixed-container .fixed-top .swiper-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0.2rem;
+  height: 0.25rem;
+  background: url(../images/icon-trumpet.png) no-repeat;
+  background-size: 100% 100%;
+}
+.fixed-container .fixed-top .swiper-container .swiper-slide {
+  display: flex;
+  align-items: center;
+  font-size: 0.24rem;
+  color: #6a332d;
+}
+.fixed-container .fixed-top .swiper-container .swiper-slide span {
+  display: flex;
+  align-items: center;
+}
+.fixed-container .fixed-top .swiper-container .swiper-slide span:nth-child(1) {
+  flex: 2 ;
+}
+.fixed-container .fixed-top .swiper-container .swiper-slide span:nth-child(2) {
+  flex: 1 ;
+  justify-content: center;
+}
+.fixed-container .fixed-top .swiper-container .swiper-slide span:nth-child(3) {
+  flex: 3 ;
+  justify-content: flex-end;
+}
+.fixed-container .fixed-top .swiper-container .swiper-slide span em {
+  font-size: 0.31rem;
+  font-weight: 900;
+  margin-left: 0.05rem;
+}
+.fixed-container .fixed-bottom {
+  width: 100%;
+  height: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.23rem;
+  padding-right: 0.13rem;
+  box-sizing: border-box;
+}
+.fixed-container .fixed-bottom .slogan {
+  font-family: "方正兰亭中黑";
+  font-size: 0.38rem;
+  color: #6a332d;
+  font-weight: 600;
+}
+.fixed-container .fixed-bottom .slogan span {
+  position: relative;
+  color: #e32d10;
+}
+.fixed-container .fixed-bottom .slogan span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.15rem;
+  transform: translateY(-50%);
+  width: 0.9rem;
+  height: 0.03rem;
+  background-color: #e32d10;
+  transform: rotate(-30deg);
+}
+.fixed-container .fixed-bottom .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.54rem;
+  height: 0.81rem;
+  border-radius: 0.15rem;
+  background-color: #e92d1e;
+  font-size: 0.39rem;
+  color: #fff;
+  font-weight: 900;
+}
+/* 遮罩层 */
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 300;
+}
+/* 活动规则 */
+.activity-rules {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 6.4rem;
+  height: 7.76rem;
+  background: url(../images/bg-rules.png) no-repeat;
+  background-size: 100% 100%;
+  background-color: #ff4f40;
+  padding-top: 0.8rem;
+  padding-left: 1.11rem;
+  padding-right: 0.58rem;
+  box-sizing: border-box;
+  z-index: 400;
+}
+.activity-rules h2 {
+  font-size: 0.48rem;
+  line-height: 0.48rem;
+  text-align: center;
+}
+.activity-rules li {
+  position: relative;
+  font-size: 0.26rem;
+  line-height: 0.46rem;
+  color: #fff;
+  margin-top: 0.2rem;
+}
+.activity-rules li::before {
+  content: "1";
+  position: absolute;
+  top: 0.04rem;
+  left: -0.48rem;
+  width: 0.34rem;
+  height: 0.34rem;
+  background-color: #ffe556;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.24rem;
+  color: #ff4f40;
+}
+.activity-rules li:nth-child(2)::before {
+  content: "2";
+}
+.activity-rules li:nth-child(3)::before {
+  content: "3";
+}
+.activity-rules li:nth-child(4)::before {
+  content: "4";
+}
+.activity-rules li:nth-child(5)::before {
+  content: "5";
+}
+/* 过渡动画 */
+.transition-animate-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 2.28rem;
+  box-sizing: border-box;
+  z-index: 400;
+}
+.transition-animate-container .transition-animate {
+  width: 1.59rem;
+  height: 1.59rem;
+  background: url(../images/transition-animation.gif) no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.transition-animate-container p {
+  font-size: 0.36rem;
+  line-height: 0.36rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.77rem;
+}
+.transition-animate-container p em {
+  font-size: 0.72rem;
+  color: #de8d45;
+}
+.transition-animate-container .loading {
+  font-size: 0.48rem;
+  line-height: 0.48rem;
+  color: #de8d45;
+  text-align: center;
+  margin-top: 3.76rem;
+}
+/* 活动弹窗 */
+.popup-activity {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 6.1rem;
+  height: 6.87rem;
+  background: url(../images/bg-activity.png) no-repeat;
+  background-size: 100% 100%;
+  padding-top: 1.52rem;
+  box-sizing: border-box;
+  z-index: 400;
+}
+.popup-activity .title {
+  font-family: "方正兰亭中黑";
+  color: #d9251a;
+  text-align: center;
+}
+.popup-activity .title p {
+  font-size: 0.39rem;
+  line-height: 0.59rem;
+}
+.popup-activity .title h2 {
+  font-size: 0.67rem;
+  line-height: 0.86rem;
+}
+.popup-activity .tip {
+  margin-top: 0.88rem;
+  text-align: center;
+  color: #fff;
+}
+.popup-activity .jump-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.45rem;
+  height: 0.94rem;
+  border-radius: 0.47rem;
+  background: linear-gradient(to bottom, #ffe4c4, #ebb470);
+  margin: 0.17rem auto 0;
+  font-family: "方正兰亭简";
+  font-size: 0.5rem;
+  color: #d9251a;
+  box-shadow: 0 0.25rem 0 -0.2rem #ab0b0b;
+}
+.close {
+  position: absolute;
+  top: -1.42rem;
+  right: 0.4rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+.animate-move {
+  animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+  100% {
+    background-position: left 1rem;
+  }
+}
