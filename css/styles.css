@@ -339,6 +339,7 @@ header .activity-rules-slogan {
   transform: translateX(-50%) translateY(-50%);
   width: 6.4rem;
   height: 7.76rem;
+  border-radius: 0.35rem;
   background: url(../images/bg-rules.png) no-repeat;
   background-size: 100% 100%;
   background-color: #ff4f40;
