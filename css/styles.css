@@ -155,9 +155,7 @@ header .activity-rules-slogan {
   width: 2.99rem;
   height: 3.78rem;
   box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.5);
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  transition: all 0.2s;
+  transition: all 0.1s;
   filter: blur(1px);
 }
 .main .content-img04 .swiper-container .swiper-slide-active {

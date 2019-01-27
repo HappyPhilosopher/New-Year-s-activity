@@ -5,6 +5,7 @@ let slide01 = new Swiper('.content-img04 .swiper-container', {
     watchSlidesProgress: true,
     slidesPerView: 'auto',
     centeredSlides: true,
+    spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination'
     },
